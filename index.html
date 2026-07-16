@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempo — Find your focus rhythm</title>
+<meta name="description" content="Tempo — an AI assistant that organizes your day around your natural focus rhythm.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><span class="logo-mark"></span>Tempo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#" class="nav-login">Log in</a>
+      <a href="#pricing" class="nav-cta">Start free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="badge">✨ New — adaptive daily planning</p>
+      <h1 class="hero-title">Work in <span class="highlight">rhythm,</span><br>not against the clock.</h1>
+      <p class="hero-sub">
+        Tempo learns when you focus best and rebuilds your schedule
+        around it — so deep work happens when you're actually sharp.
+      </p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary">Start free — no card needed</a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
+      </div>
+      <p class="hero-trust">Used by 2,400+ focused teams and solo builders</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="dashboard-card">
+        <div class="dash-top">
+          <span class="dash-dot"></span><span class="dash-dot"></span><span class="dash-dot"></span>
+          <span class="dash-label">Today's rhythm</span>
+        </div>
+        <div class="pulse-bars" id="pulseBars"></div>
+        <div class="dash-tasks">
+          <div class="dash-task done"><span class="check">✓</span> Deep work — Design review</div>
+          <div class="dash-task active"><span class="dot-live"></span> Focus block — 47 min left</div>
+          <div class="dash-task"><span class="check">·</span> Email + admin (low-energy slot)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== LOGOS STRIP ===== -->
+  <section class="logos-strip">
+    <div class="section-inner logos-inner">
+      <span>TRUSTED BY BUILDERS AT</span>
+      <div class="logo-chip">Northwind</div>
+      <div class="logo-chip">Halcyon</div>
+      <div class="logo-chip">Ledger&amp;Co</div>
+      <div class="logo-chip">Ferrous</div>
+      <div class="logo-chip">Quillwork</div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section" id="features">
+    <div class="section-inner">
+      <p class="section-eyebrow">Features</p>
+      <h2 class="section-title">Built around how you actually focus</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">◐</div>
+          <h3>Rhythm detection</h3>
+          <p>Tempo quietly learns your energy peaks over the first week — no surveys, no setup.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">▤</div>
+          <h3>Auto-rebuilt schedule</h3>
+          <p>Your calendar reshuffles itself each morning to put deep work in your sharpest hours.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">◈</div>
+          <h3>Focus blocks</h3>
+          <p>One-tap sessions that silence notifications and track real focused minutes, not busywork.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⟲</div>
+          <h3>Weekly recap</h3>
+          <p>A short, honest summary of where your time actually went — and what to adjust next week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section section-alt" id="how">
+    <div class="section-inner">
+      <p class="section-eyebrow">How it works</p>
+      <h2 class="section-title">Three steps. Zero setup calls.</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Connect your calendar</h3>
+          <p>Tempo reads your existing calendar — nothing to migrate, nothing to configure.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Work normally for a week</h3>
+          <p>It watches when you actually get things done, quietly, in the background.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Let it rebuild your days</h3>
+          <p>From week two, your schedule starts shaping itself around your real rhythm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section" id="pricing">
+    <div class="section-inner">
+      <p class="section-eyebrow center">Pricing</p>
+      <h2 class="section-title center">Simple, honest pricing</h2>
+      <p class="section-sub center">Start free. Upgrade only if it earns its keep.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Free</h3>
+          <p class="price">₹0<span>/mo</span></p>
+          <p class="price-desc">For trying Tempo out</p>
+          <ul class="price-features">
+            <li>1 calendar connected</li>
+            <li>Basic rhythm detection</li>
+            <li>3 focus blocks / day</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-full">Start free</a>
+        </div>
+        <div class="price-card featured">
+          <span class="price-tag">Most popular</span>
+          <h3>Pro</h3>
+          <p class="price">₹499<span>/mo</span></p>
+          <p class="price-desc">For solo builders &amp; freelancers</p>
+          <ul class="price-features">
+            <li>Unlimited calendars</li>
+            <li>Full rhythm detection</li>
+            <li>Unlimited focus blocks</li>
+            <li>Weekly recap reports</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">Start free trial</a>
+        </div>
+        <div class="price-card">
+          <h3>Team</h3>
+          <p class="price">₹399<span>/mo per seat</span></p>
+          <p class="price-desc">For small focused teams</p>
+          <ul class="price-features">
+            <li>Everything in Pro</li>
+            <li>Shared team rhythm view</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-full">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section-alt" id="faq">
+    <div class="section-inner">
+      <p class="section-eyebrow center">FAQ</p>
+      <h2 class="section-title center">Good to know</h2>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section cta-section">
+    <div class="section-inner cta-inner">
+      <h2 class="cta-title">Stop scheduling against yourself.</h2>
+      <p class="cta-sub">Free to start. Two minutes to connect. No credit card.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg">Start free — no card needed</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>Tempo — work in rhythm.</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
